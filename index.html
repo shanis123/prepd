@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prepd - Fresh cut vegetables delivered daily in Kochi. Save 30 minutes every day.">
+    <title>Prepd | Fresh Cut Vegetables</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">prepd<span>.</span></a>
+        <div class="nav-menu" id="navMenu">
+            <a href="#kits">Our Kits</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="https://wa.me/919876543210?text=Hi%20Prepd!%20I%20want%20to%20order" class="btn-order" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Order Now
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-label">
+                <span class="dot"></span>
+                Fresh Daily in Kochi
+            </div>
+            <h1>Freshly Chopped.<br><em>Ready to Cook.</em></h1>
+            <p>Save 30 minutes every day with our vacuum-packed, hygienic vegetable kits. We wash, chop & deliver — you just cook.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/919876543210?text=Hi!%20I'd%20like%20to%20order%20vegetable%20kits" class="btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Order on WhatsApp
+                </a>
+                <a href="#kits" class="btn-secondary">View Kits</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong>500+</strong>
+                    <span>Happy Homes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>30 min</strong>
+                    <span>Saved Daily</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Fresh</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80" alt="Fresh green vegetables">
+            <div class="hero-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                Ozone Washed
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+            </svg>
+            <span>Ozone Washed</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+            </svg>
+            <span>No Preservatives</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
+                <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <span>Farm Fresh</span>
+        </div>
+        <div class="feature">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9H21"/>
+                <path d="M9 21V9"/>
+            </svg>
+            <span>Vacuum Packed</span>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section class="kits" id="kits">
+        <div class="section-head">
+            <h2>Our Vegetable Kits</h2>
+            <p>Ready-to-cook packs for your favorite South Indian dishes</p>
+        </div>
+        <div class="kits-grid">
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?w=500&q=80" alt="Sambar Kit" loading="lazy">
+                    <span class="kit-badge">Bestseller</span>
+                </div>
+                <div class="kit-details">
+                    <h3>Sambar Kit</h3>
+                    <p>Drumstick, carrot, brinjal, tomato, onion & more</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;89</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Sambar%20Kit" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1557844352-761f2565b576?w=500&q=80" alt="Avial Kit" loading="lazy">
+                    <span class="kit-badge">Kerala Special</span>
+                </div>
+                <div class="kit-details">
+                    <h3>Avial Kit</h3>
+                    <p>Raw banana, ash gourd, beans, drumstick & coconut</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;99</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Avial%20Kit" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500&q=80" alt="Thoran Kit" loading="lazy">
+                </div>
+                <div class="kit-details">
+                    <h3>Thoran Kit</h3>
+                    <p>Cabbage, beans, carrot finely chopped with coconut</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;69</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Thoran%20Kit" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1615477550927-6ec413bf9f56?w=500&q=80" alt="Peeled Garlic" loading="lazy">
+                    <span class="kit-badge">Time Saver</span>
+                </div>
+                <div class="kit-details">
+                    <h3>Peeled Garlic</h3>
+                    <p>100% hand-peeled fresh garlic cloves</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;49</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Peeled%20Garlic" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Salad Kit" loading="lazy">
+                </div>
+                <div class="kit-details">
+                    <h3>Salad Kit</h3>
+                    <p>Lettuce, cucumber, tomato, onion & bell peppers</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;109</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Salad%20Kit" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="kit-card">
+                <div class="kit-image">
+                    <img src="https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?w=500&q=80" alt="Curry Kit" loading="lazy">
+                </div>
+                <div class="kit-details">
+                    <h3>Curry Kit</h3>
+                    <p>Potato, peas, carrot, beans - perfect for any curry</p>
+                    <div class="kit-footer">
+                        <span class="kit-price">&#8377;79</span>
+                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Curry%20Kit" target="_blank" class="kit-add">Add to Order</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="section-head">
+            <h2>From Farm to Your Kitchen</h2>
+            <p>How we ensure freshness at every step</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 22C12 22 20 16 20 10C20 6 16 2 12 2C8 2 4 6 4 10C4 16 12 22 12 22Z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <div class="step-num">01</div>
+                <h3>Source</h3>
+                <p>Fresh vegetables from local farms every morning</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="process-step">
+                <div class="step-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L12 6"/>
+                        <path d="M12 18L12 22"/>
+                        <path d="M4.93 4.93L7.76 7.76"/>
+                        <path d="M16.24 16.24L19.07 19.07"/>
+                        <path d="M2 12L6 12"/>
+                        <path d="M18 12L22 12"/>
+                        <circle cx="12" cy="12" r="4"/>
+                    </svg>
+                </div>
+                <div class="step-num">02</div>
+                <h3>Wash</h3>
+                <p>Triple ozone wash to remove dirt & pesticides</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="process-step">
+                <div class="step-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="6" y="6" width="12" height="2" rx="1"/>
+                        <path d="M8 12H16"/>
+                        <path d="M10 16H14"/>
+                        <path d="M12 2V4"/>
+                    </svg>
+                </div>
+                <div class="step-num">03</div>
+                <h3>Cut</h3>
+                <p>Precision cut by trained professionals</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="process-step">
+                <div class="step-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="4" y="4" width="16" height="16" rx="2"/>
+                        <path d="M4 10H20"/>
+                        <path d="M10 4V20"/>
+                        <polyline points="14 13 16 15 14 17"/>
+                    </svg>
+                </div>
+                <div class="step-num">04</div>
+                <h3>Pack</h3>
+                <p>Vacuum sealed to lock in freshness</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-box">
+            <h2>Ready to save time?</h2>
+            <p>Order on WhatsApp and get fresh vegetables delivered to your doorstep.</p>
+            <a href="https://wa.me/919876543210?text=Hi%20Prepd!%20I%20want%20to%20place%20an%20order" class="btn-primary btn-lg" target="_blank">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Start Your Order
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="#" class="logo">prepd<span>.</span></a>
+                <p>Fresh vegetables, zero hassle.<br>Making home cooking effortless.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#kits">Our Kits</a>
+                    <a href="#process">Our Process</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                    <a href="mailto:hello@prepd.co.in">hello@prepd.co.in</a>
+                    <span>Kochi, Kerala</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prepd. All rights reserved.</p>
+            <p>FSSAI: 12345678901234</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
