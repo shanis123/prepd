@@ -1,338 +1,2199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prepd - Fresh cut vegetables delivered daily in Kochi. Save 30 minutes every day.">
-    <title>Prepd | Fresh Cut Vegetables</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <a href="#" class="logo">prepd<span>.</span></a>
-        <div class="nav-menu" id="navMenu">
-            <a href="#kits">Our Kits</a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Prep D — washed, cut and hygienically packed vegetables, fruits, microgreens and ready-to-cook meal packs, delivered across Malappuram and Kozhikode. Just open the pack and cook."
+      />
+      <meta name="theme-color" content="#12280F" />
+      <title>Prep D — From Pack to Pan</title>
+
+      <link rel="icon" type="image/png" href="green_icon-01.png" />
+      <link rel="apple-touch-icon" href="green_icon-01.png" />
+
+      <meta property="og:title" content="Prep D — From Pack to Pan" />
+      <meta
+         property="og:description"
+         content="Washed, cut and hygienically packed vegetables, fruits and ready-to-cook meal packs, delivered to your door."
+      />
+      <meta property="og:type" content="website" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles.css" />
+
+      <!-- set before first paint: reveal styles only apply when JS can undo them -->
+      <script>
+         document.documentElement.classList.add('js');
+      </script>
+   </head>
+   <body>
+      <a class="skip-link" href="#main">Skip to content</a>
+
+      <!-- ═══════════ NAV ═══════════ -->
+      <header class="nav" id="nav">
+         <a href="#" class="logo" aria-label="Prep D home">
+            <span class="logo-mark" aria-hidden="true"></span>
+            prep<em>d</em>
+         </a>
+
+         <nav class="nav-links" id="navLinks" aria-label="Main">
+            <a href="#about">About</a>
             <a href="#process">Process</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <a href="https://wa.me/919876543210?text=Hi%20Prepd!%20I%20want%20to%20order" class="btn-order" target="_blank">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            <a href="#packs">Packs</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#plans">Plans</a>
+            <a href="#faq">FAQ</a>
+            <a href="#reach">Contact</a>
+         </nav>
+
+         <a
+            class="btn btn-solid nav-cta"
+            href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order."
+            target="_blank"
+            rel="noopener"
+         >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+               <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+               />
             </svg>
-            Order Now
-        </a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+            Order
+         </a>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <div class="hero-label">
-                <span class="dot"></span>
-                Fresh Daily in Kochi
+         <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span>
+         </button>
+      </header>
+
+      <main id="main">
+         <!-- ═══════════ HERO ═══════════ -->
+         <section class="hero">
+            <div class="hero-copy">
+               <p class="eyebrow" data-hero="1">
+                  <span class="live-dot" aria-hidden="true"></span>
+                  Malappuram
+                  <span class="live-dot" aria-hidden="true"></span>
+                  Kozhikode
+               </p>
+
+               <h1 class="hero-title">
+                  <span class="line" data-hero="2">From</span>
+                  <span class="line" data-hero="3">Pack</span>
+                  <span class="line indent" data-hero="4">to <em>Pan.</em></span>
+               </h1>
+
+               <p class="hero-lead" data-hero="5">
+                  Washed, cut and hygienically packed vegetables, fruits and ready-to-cook meal packs &mdash; delivered to your
+                  door. Just open the pack and cook.
+               </p>
+
+               <div class="hero-actions" data-hero="6">
+                  <a
+                     class="btn btn-solid btn-lg"
+                     href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order."
+                     target="_blank"
+                     rel="noopener"
+                  >
+                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                           d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                        />
+                     </svg>
+                     Order on WhatsApp
+                  </a>
+                  <a class="btn btn-ghost btn-lg" href="#packs">See the packs</a>
+               </div>
+
+               <dl class="specs" data-hero="7">
+                  <div class="spec">
+                     <dt>Cold chain</dt>
+                     <dd class="mono">0&ndash;4&deg;C</dd>
+                  </div>
+                  <div class="spec">
+                     <dt>Washed</dt>
+                     <dd class="mono">2&ndash;3&times;</dd>
+                  </div>
+                  <div class="spec">
+                     <dt>Pack sizes</dt>
+                     <dd class="mono">250g &middot; 500g &middot; 1kg</dd>
+                  </div>
+               </dl>
             </div>
-            <h1>Freshly Chopped.<br><em>Ready to Cook.</em></h1>
-            <p>Save 30 minutes every day with our vacuum-packed, hygienic vegetable kits. We wash, chop & deliver — you just cook.</p>
-            <div class="hero-btns">
-                <a href="https://wa.me/919876543210?text=Hi!%20I'd%20like%20to%20order%20vegetable%20kits" class="btn-primary" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    Order on WhatsApp
-                </a>
-                <a href="#kits" class="btn-secondary">View Kits</a>
+
+            <div class="hero-visual" data-hero="8">
+               <!-- the real product; the CSS mock-up it replaces existed only
+                    because no photograph of the pack was available -->
+               <div class="hero-pack" id="heroPack">
+                  <img
+                     class="hero-pack-img"
+                     src="pack-fresh-cut-vegetables-vacuum.jpg"
+                     alt="Prep D Fresh Cut Vegetables — vacuum sealed 500g pack of washed, cut carrot, cauliflower, beans, onion and capsicum"
+                     width="854"
+                     height="1280"
+                     fetchpriority="high"
+                  />
+                  <p class="pack-caption mono">vacuum sealed &middot; net 500g</p>
+               </div>
+               <div class="hero-glow" aria-hidden="true"></div>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <strong>500+</strong>
-                    <span>Happy Homes</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <strong>30 min</strong>
-                    <span>Saved Daily</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <strong>100%</strong>
-                    <span>Fresh</span>
-                </div>
+
+            <p class="scroll-cue mono" aria-hidden="true">scroll<span class="cue-line"></span></p>
+         </section>
+
+         <!-- ═══════════ TICKER ═══════════ -->
+         <div class="ticker" aria-hidden="true">
+            <div class="ticker-track" id="tickerTrack">
+               <span>Fresh</span><i>&#9679;</i><span>Washed</span><i>&#9679;</i><span>Cut</span><i>&#9679;</i
+               ><span>Hygienically Packed</span><i>&#9679;</i> <span>Vegetables</span><i>&#9679;</i><span>Fruits</span
+               ><i>&#9679;</i><span>Microgreens</span><i>&#9679;</i><span>Natural Drinks</span><i>&#9679;</i>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80" alt="Fresh green vegetables">
-            <div class="hero-badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                Ozone Washed
+         </div>
+
+         <!-- ═══════════ ABOUT ═══════════ -->
+         <section class="about" id="about">
+            <div class="about-grid">
+               <div class="about-lead">
+                  <p class="section-tag mono">About</p>
+                  <h2 class="statement" data-split>
+                     Prep D is a healthy lifestyle brand built to save your time, your effort, and the food you&rsquo;d otherwise
+                     throw away.
+                  </h2>
+               </div>
+
+               <ol class="claims">
+                  <li class="claim">
+                     <span class="claim-num mono">01</span>
+                     <p>No washing. No cutting. No kitchen stress.</p>
+                  </li>
+                  <li class="claim">
+                     <span class="claim-num mono">02</span>
+                     <p>Saves time and reduces daily effort.</p>
+                  </li>
+                  <li class="claim">
+                     <span class="claim-num mono">03</span>
+                     <p>Minimises food waste with pre-portioned packs.</p>
+                  </li>
+                  <li class="claim">
+                     <span class="claim-num mono">04</span>
+                     <p>Hygienic packaging for freshness and safety.</p>
+                  </li>
+               </ol>
             </div>
-        </div>
-    </section>
 
-    <!-- Features Strip -->
-    <section class="features-strip">
-        <div class="feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-            </svg>
-            <span>Ozone Washed</span>
-        </div>
-        <div class="feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z"/>
-                <line x1="12" y1="8" x2="12" y2="16"/>
-            </svg>
-            <span>No Preservatives</span>
-        </div>
-        <div class="feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
-                <polyline points="9 12 11 14 15 10"/>
-            </svg>
-            <span>Farm Fresh</span>
-        </div>
-        <div class="feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <path d="M3 9H21"/>
-                <path d="M9 21V9"/>
-            </svg>
-            <span>Vacuum Packed</span>
-        </div>
-    </section>
+            <!-- brand story -->
+            <div class="story" data-reveal>
+               <div class="story-copy">
+                  <h3 class="story-head">
+                     Born in Kerala kitchens, to end knife fatigue, scrap waste and the dirty market run.
+                  </h3>
+                  <p>
+                     Prep D started from one stubborn idea: nobody should spend 45 minutes chopping, peeling shallots and
+                     scraping a slimy board just to eat a decent home-cooked meal.
+                  </p>
+                  <p>
+                     We buy direct from partner farms following good agricultural practice in Wayanad, Palakkad and the
+                     Nilgiris. Vegetables reach our cold prep facility early in the morning, go through triple ozonated
+                     water washing, uniform cut calibration and vacuum sealing &mdash; all inside 90 minutes.
+                  </p>
+                  <p>
+                     What arrives at your door is 100% edible, sanitised, nutrient-intact food, ready for the pan the
+                     moment the pouch opens.
+                  </p>
+               </div>
 
-    <!-- Kits Section -->
-    <section class="kits" id="kits">
-        <div class="section-head">
-            <h2>Our Vegetable Kits</h2>
-            <p>Ready-to-cook packs for your favorite South Indian dishes</p>
-        </div>
-        <div class="kits-grid">
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?w=500&q=80" alt="Sambar Kit" loading="lazy">
-                    <span class="kit-badge">Bestseller</span>
-                </div>
-                <div class="kit-details">
-                    <h3>Sambar Kit</h3>
-                    <p>Drumstick, carrot, brinjal, tomato, onion & more</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;89</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Sambar%20Kit" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1557844352-761f2565b576?w=500&q=80" alt="Avial Kit" loading="lazy">
-                    <span class="kit-badge">Kerala Special</span>
-                </div>
-                <div class="kit-details">
-                    <h3>Avial Kit</h3>
-                    <p>Raw banana, ash gourd, beans, drumstick & coconut</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;99</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Avial%20Kit" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500&q=80" alt="Thoran Kit" loading="lazy">
-                </div>
-                <div class="kit-details">
-                    <h3>Thoran Kit</h3>
-                    <p>Cabbage, beans, carrot finely chopped with coconut</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;69</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Thoran%20Kit" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1615477550927-6ec413bf9f56?w=500&q=80" alt="Peeled Garlic" loading="lazy">
-                    <span class="kit-badge">Time Saver</span>
-                </div>
-                <div class="kit-details">
-                    <h3>Peeled Garlic</h3>
-                    <p>100% hand-peeled fresh garlic cloves</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;49</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Peeled%20Garlic" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Salad Kit" loading="lazy">
-                </div>
-                <div class="kit-details">
-                    <h3>Salad Kit</h3>
-                    <p>Lettuce, cucumber, tomato, onion & bell peppers</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;109</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Salad%20Kit" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="kit-card">
-                <div class="kit-image">
-                    <img src="https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?w=500&q=80" alt="Curry Kit" loading="lazy">
-                </div>
-                <div class="kit-details">
-                    <h3>Curry Kit</h3>
-                    <p>Potato, peas, carrot, beans - perfect for any curry</p>
-                    <div class="kit-footer">
-                        <span class="kit-price">&#8377;79</span>
-                        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20Curry%20Kit" target="_blank" class="kit-add">Add to Order</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="section-head">
-            <h2>From Farm to Your Kitchen</h2>
-            <p>How we ensure freshness at every step</p>
-        </div>
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 22C12 22 20 16 20 10C20 6 16 2 12 2C8 2 4 6 4 10C4 16 12 22 12 22Z"/>
-                        <circle cx="12" cy="10" r="3"/>
-                    </svg>
-                </div>
-                <div class="step-num">01</div>
-                <h3>Source</h3>
-                <p>Fresh vegetables from local farms every morning</p>
+               <figure class="story-figure">
+                  <img
+                     src="src-cold-facility.jpg"
+                     alt="Stainless-steel cold prep room where vegetables are washed and cut"
+                     loading="lazy"
+                     width="1376"
+                     height="768"
+                  />
+                  <figcaption class="mono">Cold prep suite &middot; 8&deg;C</figcaption>
+               </figure>
             </div>
-            <div class="step-line"></div>
-            <div class="process-step">
-                <div class="step-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2L12 6"/>
-                        <path d="M12 18L12 22"/>
-                        <path d="M4.93 4.93L7.76 7.76"/>
-                        <path d="M16.24 16.24L19.07 19.07"/>
-                        <path d="M2 12L6 12"/>
-                        <path d="M18 12L22 12"/>
-                        <circle cx="12" cy="12" r="4"/>
-                    </svg>
-                </div>
-                <div class="step-num">02</div>
-                <h3>Wash</h3>
-                <p>Triple ozone wash to remove dirt & pesticides</p>
-            </div>
-            <div class="step-line"></div>
-            <div class="process-step">
-                <div class="step-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="6" y="6" width="12" height="2" rx="1"/>
-                        <path d="M8 12H16"/>
-                        <path d="M10 16H14"/>
-                        <path d="M12 2V4"/>
-                    </svg>
-                </div>
-                <div class="step-num">03</div>
-                <h3>Cut</h3>
-                <p>Precision cut by trained professionals</p>
-            </div>
-            <div class="step-line"></div>
-            <div class="process-step">
-                <div class="step-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="4" y="4" width="16" height="16" rx="2"/>
-                        <path d="M4 10H20"/>
-                        <path d="M10 4V20"/>
-                        <polyline points="14 13 16 15 14 17"/>
-                    </svg>
-                </div>
-                <div class="step-num">04</div>
-                <h3>Pack</h3>
-                <p>Vacuum sealed to lock in freshness</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-box">
-            <h2>Ready to save time?</h2>
-            <p>Order on WhatsApp and get fresh vegetables delivered to your doorstep.</p>
-            <a href="https://wa.me/919876543210?text=Hi%20Prepd!%20I%20want%20to%20place%20an%20order" class="btn-primary btn-lg" target="_blank">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                Start Your Order
-            </a>
-        </div>
-    </section>
+            <!-- mission / vision -->
+            <div class="mv-grid">
+               <article class="mv" data-reveal>
+                  <p class="mv-tag mono">Mission</p>
+                  <p>
+                     To make clean home cooking effortless, affordable and completely scrap-free &mdash; for every busy
+                     family and every professional kitchen in South India.
+                  </p>
+               </article>
+               <article class="mv" data-reveal>
+                  <p class="mv-tag mono">Vision</p>
+                  <p>
+                     To build a trusted cold-chain farm-to-pan network that takes thousands of tons of kitchen waste out
+                     of the system while making daily nutrition genuinely easy.
+                  </p>
+               </article>
+            </div>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="footer-main">
+            <!-- food safety -->
+            <div class="safety" data-reveal>
+               <h3 class="safety-head">How we keep it safe</h3>
+               <ul class="safety-list">
+                  <li>HACCP and GMP standard stainless-steel cutting suites</li>
+                  <li>Periodic third-party pesticide and microbial testing</li>
+                  <li>Food-grade BPA-free multi-layer vacuum pouches with anti-fog film</li>
+                  <li>Temperature dataloggers on every refrigerated delivery vehicle</li>
+                  <li>Every pack stamped with its own packed-on and use-by date</li>
+               </ul>
+            </div>
+
+            <!-- Interactive Kitchen Time & Scrap Money Calculator -->
+            <div class="kitchen-calc" data-reveal>
+               <div class="kitchen-calc-inner">
+                  <!-- Left: Sliders and copy -->
+                  <div class="kitchen-calc-controls">
+                     <span class="kitchen-calc-badge mono">Interactive Kitchen Calculator</span>
+                     <h3 class="kitchen-calc-title">How much time &amp; scrap money will your home save?</h3>
+                     <p class="kitchen-calc-sub">
+                        Adjust your family cooking frequency to calculate exact kitchen prep hours and money saved by eliminating discarded vegetable peels.
+                     </p>
+
+                     <div class="kitchen-calc-sliders">
+                        <div class="calc-slider-group">
+                           <div class="calc-slider-header mono">
+                              <span>Days you cook at home per week:</span>
+                              <strong id="calcDaysVal">6 Days</strong>
+                           </div>
+                           <input
+                              type="range"
+                              id="calcDaysSlider"
+                              min="1"
+                              max="7"
+                              value="6"
+                              step="1"
+                              class="calc-range-input"
+                              aria-label="Days you cook at home per week"
+                           />
+                        </div>
+
+                        <div class="calc-slider-group">
+                           <div class="calc-slider-header mono">
+                              <span>Family / Household Members:</span>
+                              <strong id="calcMembersVal">4 People</strong>
+                           </div>
+                           <input
+                              type="range"
+                              id="calcMembersSlider"
+                              min="1"
+                              max="8"
+                              value="4"
+                              step="1"
+                              class="calc-range-input"
+                              aria-label="Family / Household Members"
+                           />
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Right: Results Bento Grid -->
+                  <div class="kitchen-calc-results">
+                     <div class="calc-stat-card">
+                        <div class="calc-stat-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                              <circle cx="12" cy="12" r="10" />
+                              <polyline points="12 6 12 12 16 14" />
+                           </svg>
+                        </div>
+                        <div class="calc-stat-val" id="calcHoursSaved">18.1 hrs</div>
+                        <div class="calc-stat-label mono">Prep Time Saved / Mo</div>
+                     </div>
+
+                     <div class="calc-stat-card">
+                        <div class="calc-stat-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                              <path d="M3 6h18" />
+                              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                              <line x1="10" y1="11" x2="10" y2="17" />
+                              <line x1="14" y1="11" x2="14" y2="17" />
+                           </svg>
+                        </div>
+                        <div class="calc-stat-val" id="calcWasteSaved">15.5 kg</div>
+                        <div class="calc-stat-label mono">Wet Scrap Waste Diverted</div>
+                     </div>
+
+                     <div class="calc-stat-card">
+                        <div class="calc-stat-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                              <path d="M6 3h12" />
+                              <path d="M6 8h12" />
+                              <path d="M6 13l8.5 8" />
+                              <path d="M6 13h3a4.5 4.5 0 0 0 0-9" />
+                           </svg>
+                        </div>
+                        <div class="calc-stat-val" id="calcMoneySaved">&#8377;651</div>
+                        <div class="calc-stat-label mono">Scrap Money Saved</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- ═══════════ WHY CHOOSE ═══════════ -->
+         <section class="pillars" id="why">
+            <div class="section-head">
+               <p class="section-tag mono">Why Prep D</p>
+               <h2>Six reasons the pack beats the market bag.</h2>
+            </div>
+
+            <div class="pillar-grid">
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">Farm direct</span>
+                  <h3>Fresh ingredients</h3>
+                  <p class="pillar-sub mono">Dawn farm sourcing</p>
+                  <p>Harvested from partner farms in Wayanad and Palakkad at dawn, prepped the same morning.</p>
+               </article>
+
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">99.9% clean</span>
+                  <h3>Hygienically packed</h3>
+                  <p class="pillar-sub mono">Ozonated &amp; vacuum sealed</p>
+                  <p>A triple ozonated water wash lifts surface pesticide residue, then we pack in sterile cold rooms.</p>
+               </article>
+
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">Lab verified</span>
+                  <h3>Quality checked</h3>
+                  <p class="pillar-sub mono">Graded batch by batch</p>
+                  <p>Every batch goes through blemish grading, defect rejection and microbial safety checks.</p>
+               </article>
+
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">Balanced</span>
+                  <h3>Healthy recipes</h3>
+                  <p class="pillar-sub mono">Dietitian &amp; chef formulated</p>
+                  <p>Kits built for high dietary fibre, live enzymes and an honest Kerala taste.</p>
+               </article>
+
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">Zero prep</span>
+                  <h3>Easy to cook</h3>
+                  <p class="pillar-sub mono">Pack to pan in seconds</p>
+                  <p>No peeling, no chopping, no watery mess. Open the pouch and cook in 5 to 12 minutes.</p>
+               </article>
+
+               <article class="pillar" data-reveal>
+                  <span class="pillar-badge mono">Even cook</span>
+                  <h3>Premium taste</h3>
+                  <p class="pillar-sub mono">Uniform calibrated cuts</p>
+                  <p>Precision dicing means equal heat and full spice penetration in every single bite.</p>
+               </article>
+            </div>
+         </section>
+
+         <!-- ═══════════ WHY / STANDARDS ═══════════ -->
+         <section class="standards" id="standards">
+            <div class="section-head">
+               <p class="section-tag mono">Our Standards</p>
+               <h2>Eight things we don&rsquo;t compromise on</h2>
+            </div>
+
+            <div class="standards-grid">
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M16 3l11 4v8c0 7-4.7 11.8-11 14C9.7 26.8 5 22 5 15V7l11-4z" />
+                     <path d="M11 15.5l3.4 3.4L21 12.3" />
+                  </svg>
+                  <h3>100% hygienic processing</h3>
+                  <p>Every step handled to the highest hygiene standards.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M16 28c6 0 10-4.2 10-10.5C26 10 16 4 16 4S6 10 6 17.5C6 23.8 10 28 16 28z" />
+                     <path d="M16 28V13" />
+                     <path d="M16 18l4-3.5" />
+                     <path d="M16 22l-4-3.5" />
+                  </svg>
+                  <h3>Fresh vegetables daily</h3>
+                  <p>Sourced and purchased fresh every single day.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M5 11h22" />
+                     <path d="M5 16h22" />
+                     <path d="M5 21h22" />
+                     <path d="M11 6v20" />
+                     <path d="M21 6v20" />
+                  </svg>
+                  <h3>Uniform cutting</h3>
+                  <p>Consistent cuts every time for even cooking results.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <rect x="7" y="6" width="18" height="20" rx="3" />
+                     <path d="M7 10h18" />
+                     <path d="M12 16c2.5 2 5.5 2 8 0" />
+                     <path d="M12 20c2.5 2 5.5 2 8 0" />
+                  </svg>
+                  <h3>Premium vacuum packing</h3>
+                  <p>Sealed for maximum freshness and longer shelf life.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M16 5v22" />
+                     <path d="M8.5 9.5l15 13" />
+                     <path d="M23.5 9.5l-15 13" />
+                     <circle cx="16" cy="16" r="12" />
+                  </svg>
+                  <h3>Stored at <span class="mono">0&ndash;4&deg;C</span></h3>
+                  <p>Cold chain maintained from prep to delivery.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M16 7v18" />
+                     <path d="M6 12h20" />
+                     <path d="M6 12l-2 7a4.5 4.5 0 009 0l-2-7" />
+                     <path d="M22 12l-2 7a4.5 4.5 0 009 0l-2-7" />
+                  </svg>
+                  <h3>Correct weight guarantee</h3>
+                  <p>Precisely portioned, so you only pay for what you get.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <circle cx="16" cy="16" r="11" />
+                     <path d="M16 9v7.5l5 3" />
+                  </svg>
+                  <h3>On-time delivery</h3>
+                  <p>Reliable scheduling you can plan your kitchen around.</p>
+               </article>
+               <article class="std">
+                  <svg
+                     class="std-icon"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.4"
+                     aria-hidden="true"
+                  >
+                     <path d="M8 11h16l-1.4 15a2 2 0 01-2 1.8h-9.2a2 2 0 01-2-1.8L8 11z" />
+                     <path d="M12.5 11V8a3.5 3.5 0 017 0v3" />
+                     <path d="M13 16l6 6" />
+                     <path d="M19 16l-6 6" />
+                  </svg>
+                  <h3>Zero food waste</h3>
+                  <p>Pre-prepped portions mean nothing goes to waste.</p>
+               </article>
+            </div>
+
+            <p class="pull-quote">Healthy cooking should never feel difficult.</p>
+         </section>
+
+         <!-- ═══════════ HOW IT WORKS ═══════════ -->
+         <section class="how" id="how">
+            <div class="section-head">
+               <p class="section-tag mono">How It Works</p>
+               <h2>Five steps, and dinner is the only one you do.</h2>
+            </div>
+
+            <ol class="how-rail">
+               <li class="how-step" data-reveal>
+                  <span class="how-num mono">01</span>
+                  <h3>Choose</h3>
+                  <p class="how-tag mono">Select your packs</p>
+                  <p>Browse ready-to-cook vegetables, Kerala meal kits, protein breakfast cups or frozen staples.</p>
+               </li>
+               <li class="how-step" data-reveal>
+                  <span class="how-num mono">02</span>
+                  <h3>Order</h3>
+                  <p class="how-tag mono">Basket or WhatsApp</p>
+                  <p>Build a basket here, or send your kitchen list straight to our WhatsApp line with your own notes.</p>
+               </li>
+               <li class="how-step" data-reveal>
+                  <span class="how-num mono">03</span>
+                  <h3>Delivered</h3>
+                  <p class="how-tag mono">Chilled to your door</p>
+                  <p>Dispatched in 0&ndash;4&deg;C insulated boxes in your morning or evening window.</p>
+               </li>
+               <li class="how-step" data-reveal>
+                  <span class="how-num mono">04</span>
+                  <h3>Cook</h3>
+                  <p class="how-tag mono">Pack straight to pan</p>
+                  <p>No washing, peeling or cutting. Snip the vacuum seal and empty it into the pot.</p>
+               </li>
+               <li class="how-step" data-reveal>
+                  <span class="how-num mono">05</span>
+                  <h3>Enjoy</h3>
+                  <p class="how-tag mono">Fresh, whole meals</p>
+                  <p>Real flavour, proper texture, and no pile of peels waiting in the kitchen bin.</p>
+               </li>
+            </ol>
+         </section>
+
+         <!-- ═══════════ PROCESS — SIGNATURE SCROLL SEQUENCE ═══════════ -->
+         <section class="process" id="process">
+            <div class="process-stage" id="processStage">
+               <div class="process-head">
+                  <div class="process-title-group">
+                     <p class="section-tag mono light">Our Process</p>
+                     <h2>Eight steps between the farm and your pan.</h2>
+                     <p class="process-sub">From morning harvest to vacuum-sealed chill packs in under 90 minutes.</p>
+                  </div>
+
+                  <!-- Step pills bar -->
+                  <div class="process-nav" id="processNav" role="tablist" aria-label="Process steps">
+                     <button class="process-pill is-active" type="button" data-goto="0" role="tab" aria-selected="true">
+                        <span class="pill-num mono">01</span><span class="pill-label">Sourcing</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="1" role="tab" aria-selected="false">
+                        <span class="pill-num mono">02</span><span class="pill-label">Washing</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="2" role="tab" aria-selected="false">
+                        <span class="pill-num mono">03</span><span class="pill-label">QC &amp; Sort</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="3" role="tab" aria-selected="false">
+                        <span class="pill-num mono">04</span><span class="pill-label">Cutting</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="4" role="tab" aria-selected="false">
+                        <span class="pill-num mono">05</span><span class="pill-label">Fresh Lock</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="5" role="tab" aria-selected="false">
+                        <span class="pill-num mono">06</span><span class="pill-label">Vacuum</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="6" role="tab" aria-selected="false">
+                        <span class="pill-num mono">07</span><span class="pill-label">Cold Room</span>
+                     </button>
+                     <button class="process-pill" type="button" data-goto="7" role="tab" aria-selected="false">
+                        <span class="pill-num mono">08</span><span class="pill-label">Delivery</span>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="process-body">
+                  <!-- travelling pack -->
+                  <div class="track" id="track">
+                     <div class="track-rail" aria-hidden="true">
+                        <span class="track-fill" id="trackFill"></span>
+                        <span class="track-dot" style="top: 0%"></span>
+                        <span class="track-dot" style="top: 14.3%"></span>
+                        <span class="track-dot" style="top: 28.6%"></span>
+                        <span class="track-dot" style="top: 42.9%"></span>
+                        <span class="track-dot" style="top: 57.1%"></span>
+                        <span class="track-dot" style="top: 71.4%"></span>
+                        <span class="track-dot" style="top: 85.7%"></span>
+                        <span class="track-dot" style="top: 100%"></span>
+                     </div>
+
+                     <div class="travel-pack" id="travelPack">
+                        <div class="tp-shell">
+                           <div class="tp-body">
+                              <img
+                                 class="tp-photo"
+                                 id="tpPhoto"
+                                 src="pack-fresh-cut-vegetables-vacuum.jpg"
+                                 alt="Prep D vacuum packed vegetables"
+                                 loading="lazy"
+                              />
+                              <div class="tp-layer tp-water" id="tpWater" aria-hidden="true">
+                                 <span></span><span></span><span></span><span></span><span></span><span></span>
+                              </div>
+                              <div class="tp-layer tp-cuts" id="tpCuts" aria-hidden="true">
+                                 <span></span><span></span><span></span>
+                              </div>
+                              <div class="tp-layer tp-frost" id="tpFrost" aria-hidden="true"></div>
+                              <div class="tp-gloss" aria-hidden="true"></div>
+                           </div>
+                        </div>
+                        <span class="tp-temp mono" id="tpTemp">0&ndash;4&deg;C</span>
+                     </div>
+                  </div>
+
+                  <!-- step readout card -->
+                  <div class="steps-card">
+                     <div class="steps" id="steps">
+                        <article class="step is-active" data-step="0">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 01 / 08</span>
+                              <span class="step-badge mono">Farm Sourcing</span>
+                           </div>
+                           <h3>Fresh sourcing</h3>
+                           <p>
+                              Fresh vegetables sourced daily for maximum quality &mdash; bought direct from partner farms the same morning they&rsquo;re prepped.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Wayanad &amp; Nilgiris farms</span>
+                              <span class="step-meta-item mono">&#10003; 100% Morning Inflow</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="1">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 02 / 08</span>
+                              <span class="step-badge mono">Sanitisation</span>
+                           </div>
+                           <h3>Triple washing</h3>
+                           <p>
+                              Each vegetable is thoroughly washed <span class="mono">2&ndash;3&times;</span> in chilled ozonated water to completely clear dirt, microbes, and surface residue.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Triple-stage wash</span>
+                              <span class="step-meta-item mono">&#10003; Ozonated pure water</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="2">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 03 / 08</span>
+                              <span class="step-badge mono">Quality Control</span>
+                           </div>
+                           <h3>Sorting &amp; QC</h3>
+                           <p>
+                              Hand-sorted and quality checked by experienced staff, so only peak-fresh, unblemished produce makes it into the batch.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Zero defect sorting</span>
+                              <span class="step-meta-item mono">&#10003; 100% Edible yield</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="3">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 04 / 08</span>
+                              <span class="step-badge mono">Precision Cutting</span>
+                           </div>
+                           <h3>Uniform cutting</h3>
+                           <p>
+                              Precision calibrated for consistent slice and dice sizing &mdash; ensuring even heat transfer and uniform cooking in your pan.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Uniform calibrated dice</span>
+                              <span class="step-meta-item mono">&#10003; Food-grade SS blades</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="4">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 05 / 08</span>
+                              <span class="step-badge mono">Freshness Lock</span>
+                           </div>
+                           <h3>Anti-browning</h3>
+                           <p>
+                              Naturally treated to prevent oxidative browning, holding crisp texture, vivid natural colour, and nutritional integrity intact.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Natural antioxidant rinse</span>
+                              <span class="step-meta-item mono">&#10003; Preserves crispness &amp; chlorophyll</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="5">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 06 / 08</span>
+                              <span class="step-badge mono">Hermetic Sealing</span>
+                           </div>
+                           <h3>Vacuum packing</h3>
+                           <p>
+                              Hygienically sealed in heavy-duty food-grade vacuum pouches that lock out oxygen and seal in natural moisture and freshness.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Oxygen-free barrier</span>
+                              <span class="step-meta-item mono">&#10003; 100% Leak-proof seal</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="6">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 07 / 08</span>
+                              <span class="step-badge mono">Cold Chain</span>
+                           </div>
+                           <h3>Cold storage</h3>
+                           <p>
+                              Immediately moved into our temperature-controlled cold room at <span class="mono">0&ndash;4&deg;C</span> to hold peak crispness right up to dispatch.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; 0&ndash;4&deg;C constant chill</span>
+                              <span class="step-meta-item mono">&#10003; Monitored storage suite</span>
+                           </div>
+                        </article>
+
+                        <article class="step" data-step="7">
+                           <div class="step-head-row">
+                              <span class="step-index mono">Step 08 / 08</span>
+                              <span class="step-badge mono">Chilled Dispatch</span>
+                           </div>
+                           <h3>Fresh delivery</h3>
+                           <p>
+                              Delivered to your door in insulated temperature-controlled boxes on time, every time. Just open the pouch and empty into your pan.
+                           </p>
+                           <div class="step-meta">
+                              <span class="step-meta-item mono">&#10003; Morning &amp; evening slots</span>
+                              <span class="step-meta-item mono">&#10003; Ready straight to pan</span>
+                           </div>
+                        </article>
+                     </div>
+
+                     <!-- Step actions footer -->
+                     <div class="process-actions">
+                        <button class="step-btn step-prev" id="stepPrev" type="button" aria-label="Previous step" disabled>
+                           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="16" height="16">
+                              <path d="M13 16l-6-6 6-6" />
+                           </svg>
+                           <span>Prev</span>
+                        </button>
+                        <div class="step-tracker mono">
+                           <span id="stepCurrent">01</span> / <span>08</span>
+                        </div>
+                        <button class="step-btn step-next" id="stepNext" type="button" aria-label="Next step">
+                           <span>Next</span>
+                           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="16" height="16">
+                              <path d="M7 4l6 6-6 6" />
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- ═══════════ RANGE ═══════════ -->
+         <!-- <section class="range" id="range">
+            <div class="section-head">
+               <p class="section-tag mono">Product Range</p>
+               <h2>Farm-fresh, hygienically prepared, ready to cook and serve.</h2>
+            </div>
+
+            <div class="range-grid">
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="pack-fresh-vegetables-tray.jpg"
+                        alt="Prep D Fresh Vegetables tray — 500g of washed, cut carrot, beans, cauliflower and capsicum in sealed compartments"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Fresh vegetables</h3>
+                     <p>
+                        Onion, potato, tomato, carrot, beans, beetroot, cabbage, cauliflower, drumstick, spinach, capsicum,
+                        ginger, garlic &amp; more.
+                     </p>
+                     <p class="rng-meta mono">250g &middot; 500g &middot; 1kg hotel packs</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Fresh%20vegetables."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="pack-power-breakfast-oats-200g.jpg"
+                        alt="Prep D Power Breakfast Oats Mix — 200g cup with nuts, seeds and a honey sachet"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Power breakfast</h3>
+                     <p>Oats mix, sprouts, upma mix &amp; smoothie packs.</p>
+                     <p class="rng-meta mono">morning, sorted</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Power%20breakfast%20packs."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="pack-combo-packs-trio.jpg"
+                        alt="Prep D Combo Packs — Sambar Kit, Aviyal Kit and Biriyani Mix, each washed, cut and ready to cook"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Combo packs</h3>
+                     <p>Sambar, aviyal, curry, fry, soup, thoran, biriyani mix, salad kits, kalan &amp; olan.</p>
+                     <p class="rng-meta mono">perfectly measured for easy cooking</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Combo%20packs."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=700&q=80"
+                        alt="Microgreens"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Microgreens</h3>
+                     <p>Sunflower, radish, mustard &amp; pea.</p>
+                     <p class="rng-meta mono">rich in antioxidants &amp; vitamins</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Microgreens."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=600&q=80"
+                        alt="Cut fruit bowls"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Fruits</h3>
+                     <p>Cut fruits, seasonal fruits, fruit bowls &amp; fresh vegetable mix packs.</p>
+                     <p class="rng-meta mono">seasonal &middot; prepared daily</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Fruits."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+
+               <article class="rng" data-reveal>
+                  <div class="rng-media">
+                     <img
+                        src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=600&q=80"
+                        alt="Fresh pressed juices"
+                        loading="lazy"
+                     />
+                  </div>
+                  <div class="rng-body">
+                     <h3>Natural drinks</h3>
+                     <p>ABC drink, green detox, carrot juice, beetroot juice &amp; lemon honey drink.</p>
+                     <p class="rng-meta mono">no artificial additives</p>
+                     <a
+                        class="rng-cta"
+                        href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20ask%20about%20Natural%20drinks."
+                        target="_blank"
+                        rel="noopener"
+                        >Enquire on WhatsApp <span aria-hidden="true">&rarr;</span></a
+                     >
+                  </div>
+               </article>
+            </div>
+         </section> -->
+
+         <!-- ═══════════ SHOP — full catalogue, rendered from data.js ═══════════ -->
+         <!-- <section class="shop" id="shop">
+            <div class="section-head">
+               <p class="section-tag mono">Full Catalogue</p>
+               <h2>Eighteen packs. Pick what your week needs.</h2>
+               <p class="section-sub">
+                  Add to the basket and send the whole order over WhatsApp in one message &mdash; or just tap a pack to read
+                  what is inside it.
+               </p>
+            </div>
+
+            <div class="shop-controls">
+               <div class="shop-filters" id="shopFilters" role="tablist" aria-label="Product categories"></div>
+
+               <div class="shop-search">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                     <circle cx="11" cy="11" r="7" />
+                     <path d="m20 20-3.5-3.5" />
+                  </svg>
+                  <label class="sr-only" for="shopSearch">Search the catalogue</label>
+                  <input
+                     type="search"
+                     id="shopSearch"
+                     placeholder="Search sambar, oats, microgreens&hellip;"
+                     autocomplete="off"
+                  />
+               </div>
+            </div>
+
+            <p class="shop-count mono" id="shopCount" aria-live="polite"></p>
+
+            <div class="shop-grid" id="shopGrid"></div>
+
+            <p class="shop-empty" id="shopEmpty" hidden>
+               Nothing matches that. <button type="button" class="linklike" id="shopReset">Clear the filters</button>
+            </p>
+         </section> -->
+
+         <!-- ═══════════ IN THE PACK — real product photography ═══════════ -->
+         <section class="packs" id="packs">
+            <div class="section-head">
+               <p class="section-tag mono">In The Pack</p>
+               <h2>What actually arrives at your door.</h2>
+               <p class="section-sub">
+                  Every pack is labelled with its net weight, packed-on and use-by dates &mdash; so you always know
+                  exactly what you have and how long you have it.
+               </p>
+            </div>
+
+            <ul class="pack-grid">
+               <li class="pack-tile" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-fresh-cut-vegetables-vacuum.jpg"
+                        alt="Prep D Fresh Cut Vegetables — vacuum sealed 500g pack of carrot, cauliflower, beans, onion and capsicum"
+                        width="854" height="1280" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Fresh Cut Vegetables</strong>
+                        <span class="pack-spec mono">vacuum sealed &middot; 500g</span>
+                        <span class="pack-claims">Washed &middot; Cut &middot; Ready to cook</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Fresh%20Cut%20Vegetables."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+
+               <li class="pack-tile" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-fresh-vegetables-tray.jpg"
+                        alt="Prep D Fresh Vegetables tray — 500g of carrot, beans, cauliflower and capsicum in sealed compartments"
+                        width="854" height="1280" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Fresh Vegetables</strong>
+                        <span class="pack-spec mono">compartment tray &middot; 500g</span>
+                        <span class="pack-claims">Locally grown &middot; Keep refrigerated</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Fresh%20Vegetables%20(Compartment%20Tray)."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+
+               <li class="pack-tile pack-tile-wide" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-combo-packs-trio.jpg"
+                        alt="Three Prep D Combo Packs side by side — Sambar Kit, Aviyal Kit and Biriyani Mix"
+                        width="1280" height="854" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Combo Packs</strong>
+                        <span class="pack-spec mono">sambar &middot; aviyal &middot; biriyani mix</span>
+                        <span class="pack-claims">Washed &middot; Cut &middot; Ready to cook</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Combo%20Packs."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+
+               <li class="pack-tile" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-power-breakfast-oats-200g.jpg"
+                        alt="Prep D Power Breakfast Oats Mix — 200g cup with nuts, seeds and a honey sachet"
+                        width="854" height="1280" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Power Breakfast &mdash; Oats Mix</strong>
+                        <span class="pack-spec mono">cup &middot; 200g &middot; honey sachet</span>
+                        <span class="pack-claims">High protein &middot; High fiber &middot; Ready to eat</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Power%20Breakfast%20Oats%20Mix%20(200g)."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+
+               <li class="pack-tile" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-power-breakfast-oats-500g.jpg"
+                        alt="Prep D Power Breakfast Oats Mix — 500g carry pack with a QR code to scan for recipes"
+                        width="854" height="1280" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Power Breakfast &mdash; Oats Mix</strong>
+                        <span class="pack-spec mono">carry pack &middot; 500g</span>
+                        <span class="pack-claims">Washed &middot; Sorted &middot; Scan for recipes</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Power%20Breakfast%20Oats%20Mix%20(500g)."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+
+               <li class="pack-tile" data-reveal>
+                  <figure>
+                     <img
+                        src="pack-power-breakfast-sprout-mix.jpg"
+                        alt="Prep D Power Breakfast Sprout Mix with cucumber, carrot, lemon and a chaat masala sachet"
+                        width="854" height="1280" loading="lazy"
+                     />
+                     <figcaption>
+                        <strong>Power Breakfast &mdash; Sprout Mix</strong>
+                        <span class="pack-spec mono">with fresh veggies &middot; 250g</span>
+                        <span class="pack-claims">Protein rich &middot; High fiber &middot; Ready to eat</span>
+                        <a
+                           class="btn pack-order-btn"
+                           href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order%20Power%20Breakfast%20Sprout%20Mix."
+                           target="_blank"
+                           rel="noopener"
+                        >
+                           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path
+                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                              />
+                           </svg>
+                           Order Now
+                        </a>
+                     </figcaption>
+                  </figure>
+               </li>
+            </ul>
+         </section>
+
+         <!-- ═══════════ RECIPE CORNER ═══════════ -->
+         <!-- <section class="recipes" id="recipes">
+            <div class="section-head">
+               <p class="section-tag mono">Recipe Corner</p>
+               <h2>What to do with the pack once it lands.</h2>
+               <p class="section-sub">Four kitchen-tested walkthroughs, with the chef notes that actually matter.</p>
+            </div>
+
+            <div class="recipe-grid" id="recipeGrid"></div>
+         </section> -->
+
+         <!-- ═══════════ NUTRITION & HEALTH ═══════════ -->
+         <section class="nutrition-section" id="nutrition">
+            <div class="nutri-container">
+               <!-- Section Header -->
+               <div class="nutri-header">
+                  <div class="nutri-badge mono">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="14" height="14">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                     </svg>
+                     <span>Science-Backed Wellness</span>
+                  </div>
+                  <h2>Nutrition &amp; Health</h2>
+                  <p class="nutri-sub">Verified food safety, enzyme preservation, and cold-storage instructions formulated by certified dietitians.</p>
+               </div>
+
+               <!-- Tab Switcher -->
+               <div class="nutri-tabs-wrapper">
+                  <div class="nutri-tabs" role="tablist" aria-label="Nutrition tabs">
+                     <button class="nutri-tab is-active" type="button" role="tab" id="tab-btn-facts" aria-selected="true" aria-controls="panel-facts" data-tab="facts">
+                        Nutrition Facts &amp; Tips
+                     </button>
+                     <button class="nutri-tab" type="button" role="tab" id="tab-btn-storage" aria-selected="false" aria-controls="panel-storage" data-tab="storage">
+                        Storage Guide &amp; Safety
+                     </button>
+                     <button class="nutri-tab" type="button" role="tab" id="tab-btn-dietary" aria-selected="false" aria-controls="panel-dietary" data-tab="dietary">
+                        Dietary Goals Protocol
+                     </button>
+                  </div>
+               </div>
+
+               <!-- TAB 1: Facts & Healthy Eating Tips -->
+               <div class="nutri-tabpanel is-active" id="panel-facts" role="tabpanel" aria-labelledby="tab-btn-facts">
+                  <div class="nfacts-grid">
+                     <div class="nfact-card" data-reveal>
+                        <div class="nfact-card-body">
+                           <span class="nfact-value mono">94% Intact</span>
+                           <h3>Live Bioactive Enzymes</h3>
+                           <p>Ozone-sanitized cut vegetables retain 94% of their active cellular enzymes compared to blanching or chemical preservation.</p>
+                        </div>
+                        <div class="nfact-card-foot mono">NABL Laboratory Verified</div>
+                     </div>
+
+                     <div class="nfact-card" data-reveal>
+                        <div class="nfact-card-body">
+                           <span class="nfact-value mono">3.8&times; Higher</span>
+                           <h3>Vitamin C Retention</h3>
+                           <p>Hermetic oxygen-barrier pouches prevent oxidative degradation, keeping Ascorbic Acid bioavailable for 4&ndash;5 days.</p>
+                        </div>
+                        <div class="nfact-card-foot mono">NABL Laboratory Verified</div>
+                     </div>
+
+                     <div class="nfact-card" data-reveal>
+                        <div class="nfact-card-body">
+                           <span class="nfact-value mono">6.2g / Cup</span>
+                           <h3>Soluble &amp; Insoluble Fiber</h3>
+                           <p>High raw dietary fiber content promotes steady gut microbiome health and prevents blood glucose spikes.</p>
+                        </div>
+                        <div class="nfact-card-foot mono">NABL Laboratory Verified</div>
+                     </div>
+
+                     <div class="nfact-card" data-reveal>
+                        <div class="nfact-card-body">
+                           <span class="nfact-value mono">0% Preservatives</span>
+                           <h3>Zero Added Sodium &amp; Sulfur</h3>
+                           <p>We never use sodium metabisulfite, chlorine bleach, or artificial shelf-life extenders.</p>
+                        </div>
+                        <div class="nfact-card-foot mono">NABL Laboratory Verified</div>
+                     </div>
+                  </div>
+
+                  <!-- Healthy Eating Tips -->
+                  <div class="tips-box" data-reveal>
+                     <div class="tips-box-head">
+                        <div class="tips-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                              <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" />
+                              <path d="M10 2c1 .5 2 2 2 5" />
+                           </svg>
+                        </div>
+                        <div>
+                           <h3>Healthy Eating Tips</h3>
+                           <p class="mono">Practical daily guidelines from clinical nutritionists</p>
+                        </div>
+                     </div>
+
+                     <div class="tips-grid">
+                        <div class="tip-card">
+                           <svg class="tip-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" width="16" height="16">
+                              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                              <path d="m9 11 3 3L22 4" />
+                           </svg>
+                           <p>Aim for at least 400g of diverse colorful vegetables daily to hit full micronutrient spectrum.</p>
+                        </div>
+                        <div class="tip-card">
+                           <svg class="tip-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" width="16" height="16">
+                              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                              <path d="m9 11 3 3L22 4" />
+                           </svg>
+                           <p>Steam vegetables rather than deep-boiling to prevent water-soluble vitamins B &amp; C from leaching out.</p>
+                        </div>
+                        <div class="tip-card">
+                           <svg class="tip-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" width="16" height="16">
+                              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                              <path d="m9 11 3 3L22 4" />
+                           </svg>
+                           <p>Pair green leafy vegetables and microgreens with healthy fats (like cold-pressed coconut oil) to absorb fat-soluble vitamins A, D, E &amp; K.</p>
+                        </div>
+                        <div class="tip-card">
+                           <svg class="tip-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" width="16" height="16">
+                              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                              <path d="m9 11 3 3L22 4" />
+                           </svg>
+                           <p>Consume fresh sprouted moong or oats cups within 30 minutes of opening for peak enzyme vitality.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- TAB 2: Storage Guide & Safety -->
+               <div class="nutri-tabpanel" id="panel-storage" role="tabpanel" aria-labelledby="tab-btn-storage" hidden>
+                  <div class="storage-grid">
+                     <div class="storage-card" data-reveal>
+                        <div class="storage-card-body">
+                           <div class="storage-icon">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                                 <path d="m10 20-1.25-2.5L6 18" />
+                                 <path d="M10 4 8.75 6.5 6 6" />
+                                 <path d="m14 20 1.25-2.5L18 18" />
+                                 <path d="m14 4 1.25 2.5L18 6" />
+                                 <path d="m17 21-3-6h-4l-3 6" />
+                                 <path d="m17 3-3 6h-4L7 3" />
+                                 <path d="M2 12h20" />
+                                 <path d="m20 10-2.5 1.25L20 14" />
+                                 <path d="m4 10 2.5 1.25L4 14" />
+                                 <path d="m3 17 6-3v-4L3 7" />
+                                 <path d="m21 17-6-3v-4l6-3" />
+                              </svg>
+                           </div>
+                           <h3>Ready-to-Cook Packs</h3>
+                           <div class="storage-specs mono">
+                              <div>Temp: <strong>0&deg;C to 4&deg;C (Refrigerator Crisper)</strong></div>
+                              <div>Shelf Life: <strong>4&ndash;5 Days</strong></div>
+                           </div>
+                           <p>Keep in original vacuum seal until ready to cook. If opened halfway, fold pouch tightly and clip.</p>
+                        </div>
+                        <div class="storage-card-foot mono">Unbroken Vacuum Seal Rule</div>
+                     </div>
+
+                     <div class="storage-card" data-reveal>
+                        <div class="storage-card-body">
+                           <div class="storage-icon">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                                 <path d="m10 20-1.25-2.5L6 18" />
+                                 <path d="M10 4 8.75 6.5 6 6" />
+                                 <path d="m14 20 1.25-2.5L18 18" />
+                                 <path d="m14 4 1.25 2.5L18 6" />
+                                 <path d="m17 21-3-6h-4l-3 6" />
+                                 <path d="m17 3-3 6h-4L7 3" />
+                                 <path d="M2 12h20" />
+                                 <path d="m20 10-2.5 1.25L20 14" />
+                                 <path d="m4 10 2.5 1.25L4 14" />
+                                 <path d="m3 17 6-3v-4L3 7" />
+                                 <path d="m21 17-6-3v-4l6-3" />
+                              </svg>
+                           </div>
+                           <h3>Ready-to-Eat Bowls &amp; Salads</h3>
+                           <div class="storage-specs mono">
+                              <div>Temp: <strong>2&deg;C to 4&deg;C (Chilled Shelf)</strong></div>
+                              <div>Shelf Life: <strong>2&ndash;3 Days</strong></div>
+                           </div>
+                           <p>Pour dressing only right before consumption to keep vegetables and sprouts crisp.</p>
+                        </div>
+                        <div class="storage-card-foot mono">Unbroken Vacuum Seal Rule</div>
+                     </div>
+
+                     <div class="storage-card" data-reveal>
+                        <div class="storage-card-body">
+                           <div class="storage-icon">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                                 <path d="m10 20-1.25-2.5L6 18" />
+                                 <path d="M10 4 8.75 6.5 6 6" />
+                                 <path d="m14 20 1.25-2.5L18 18" />
+                                 <path d="m14 4 1.25 2.5L18 6" />
+                                 <path d="m17 21-3-6h-4l-3 6" />
+                                 <path d="m17 3-3 6h-4L7 3" />
+                                 <path d="M2 12h20" />
+                                 <path d="m20 10-2.5 1.25L20 14" />
+                                 <path d="m4 10 2.5 1.25L4 14" />
+                                 <path d="m3 17 6-3v-4L3 7" />
+                                 <path d="m21 17-6-3v-4l6-3" />
+                              </svg>
+                           </div>
+                           <h3>Frozen Veggies &amp; Cassava</h3>
+                           <div class="storage-specs mono">
+                              <div>Temp: <strong>-18&deg;C (Deep Freezer)</strong></div>
+                              <div>Shelf Life: <strong>9&ndash;12 Months</strong></div>
+                           </div>
+                           <p>Do not thaw on kitchen counter; add directly to boiling water or hot frying pan from frozen state.</p>
+                        </div>
+                        <div class="storage-card-foot mono">Unbroken Vacuum Seal Rule</div>
+                     </div>
+
+                     <div class="storage-card" data-reveal>
+                        <div class="storage-card-body">
+                           <div class="storage-icon">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="20" height="20">
+                                 <path d="m10 20-1.25-2.5L6 18" />
+                                 <path d="M10 4 8.75 6.5 6 6" />
+                                 <path d="m14 20 1.25-2.5L18 18" />
+                                 <path d="m14 4 1.25 2.5L18 6" />
+                                 <path d="m17 21-3-6h-4l-3 6" />
+                                 <path d="m17 3-3 6h-4L7 3" />
+                                 <path d="M2 12h20" />
+                                 <path d="m20 10-2.5 1.25L20 14" />
+                                 <path d="m4 10 2.5 1.25L4 14" />
+                                 <path d="m3 17 6-3v-4L3 7" />
+                                 <path d="m21 17-6-3v-4l6-3" />
+                              </svg>
+                           </div>
+                           <h3>Living Microgreens</h3>
+                           <div class="storage-specs mono">
+                              <div>Temp: <strong>2&deg;C to 4&deg;C (Chilled)</strong></div>
+                              <div>Shelf Life: <strong>6&ndash;7 Days</strong></div>
+                           </div>
+                           <p>Keep inside breathable clamshell box. Snip greens right before garnishing your meal.</p>
+                        </div>
+                        <div class="storage-card-foot mono">Unbroken Vacuum Seal Rule</div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- TAB 3: Dietary Goals Protocol -->
+               <div class="nutri-tabpanel" id="panel-dietary" role="tabpanel" aria-labelledby="tab-btn-dietary" hidden>
+                  <div class="diet-box" data-reveal>
+                     <!-- Goal Switcher Buttons -->
+                     <div class="diet-goals-nav" role="tablist" aria-label="Dietary goals">
+                        <button class="diet-goal-pill is-active" type="button" data-goal="weight" role="tab" aria-selected="true">
+                           Weight Management &amp; Fat Loss
+                        </button>
+                        <button class="diet-goal-pill" type="button" data-goal="diabetes" role="tab" aria-selected="false">
+                           Blood Sugar &amp; Diabetes Management
+                        </button>
+                        <button class="diet-goal-pill" type="button" data-goal="immunity" role="tab" aria-selected="false">
+                           Immunity &amp; Gut Health Protocol
+                        </button>
+                        <button class="diet-goal-pill" type="button" data-goal="heart" role="tab" aria-selected="false">
+                           Heart &amp; Cholesterol Wellness
+                        </button>
+                     </div>
+
+                     <!-- Goal Details & CTA Grid -->
+                     <div class="diet-goal-grid">
+                        <div class="diet-goal-content" id="dietGoalContent">
+                           <h3 id="dietGoalTitle">Weight Management &amp; Fat Loss</h3>
+                           <p id="dietGoalDesc">High-volume, high-fiber, low-calorie vegetable cuts.</p>
+
+                           <div class="diet-packs-box">
+                              <span class="diet-packs-label mono">Recommended PREP'D Packs:</span>
+                              <div class="diet-packs-list" id="dietPacksList">
+                                 <span class="diet-pack-tag mono">Fine Shredded Thoran Mix</span>
+                                 <span class="diet-pack-tag mono">Sprouted Moong Salad Bowl</span>
+                                 <span class="diet-pack-tag mono">Living Microgreen Trio</span>
+                              </div>
+                           </div>
+
+                           <div class="diet-advice-box">
+                              <div class="diet-advice-head mono">
+                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="16" height="16">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 16v-4" />
+                                    <path d="M12 8h.01" />
+                                 </svg>
+                                 <span>Clinical Dietitian Advice</span>
+                              </div>
+                              <p id="dietAdviceText">Filling half your plate with raw or lightly steamed vegetables creates natural satiety while keeping caloric density under 150 kcal per main meal.</p>
+                           </div>
+                        </div>
+
+                        <!-- Right Card: Personalized Diet Kit Box -->
+                        <div class="diet-kit-card">
+                           <div class="diet-kit-icon">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" width="32" height="32">
+                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                              </svg>
+                           </div>
+                           <h4>Personalized Diet Kit Box</h4>
+                           <p>Get custom 7-day meal packs prepped to your exact macro-nutrient ratios.</p>
+                           <a class="btn-diet-wa mono" href="https://wa.me/918891004474?text=Hi%20PREP%27D%20team%2C%20I%20would%20like%20to%20consult%20for%20a%20Personalized%20Diet%20Kit%20Box" target="_blank" rel="noreferrer">
+                              Consult Dietitian on WhatsApp
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <!-- ═══════════ PLANS ═══════════ -->
+         <section class="plans" id="plans">
+            <div class="section-head">
+               <p class="section-tag mono">Subscribe &amp; Save</p>
+               <h2>Lower price. Fixed supply. No daily ordering stress.</h2>
+               <p class="section-sub">Choose the rhythm that fits your kitchen.</p>
+            </div>
+
+
+            <!-- Plan cards -->
+            <!-- Plan cards -->
+            <div class="plans-grid">
+               <!-- Starter -->
+               <article class="plan" data-reveal>
+                  <p class="plan-freq mono">Starter</p>
+                  <h3>Essential fresh-cut daily</h3>
+                  <div class="plan-price">From <span>&#8377;4,999</span> <s class="plan-was">&#8377;6,000</s></div>
+                  <ul class="plan-benefits">
+                     <li>Basic daily / weekly vegetable requirements</li>
+                     <li>Essential fresh-cut products</li>
+                     <li>Budget-friendly option</li>
+                  </ul>
+                  <a
+                     class="btn btn-outline"
+                     href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20the%20Starter%20plan."
+                     target="_blank"
+                     rel="noopener"
+                     >Get Starter</a
+                  >
+               </article>
+
+               <!-- Premium -->
+               <article class="plan plan-feature" data-reveal>
+                  <span class="plan-flag mono">Most popular</span>
+                  <p class="plan-freq mono">Premium</p>
+                  <h3>More variety, better value</h3>
+                  <div class="plan-price">From <span>&#8377;5,999</span> <s class="plan-was">&#8377;8,000</s></div>
+                  <ul class="plan-benefits">
+                     <li>More variety across fresh-cut selections</li>
+                     <li>Premium fresh-cut selections</li>
+                     <li>Better quantity &amp; value</li>
+                     <li>Suitable for families</li>
+                     <li>
+                        <span class="plan-incl-badge">Includes</span>
+                        Power Breakfast range
+                     </li>
+                  </ul>
+                  <a
+                     class="btn btn-solid"
+                     href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20the%20Premium%20plan."
+                     target="_blank"
+                     rel="noopener"
+                     >Get Premium</a
+                  >
+               </article>
+
+               <!-- Elite -->
+               <article class="plan" data-reveal>
+                  <p class="plan-freq mono">Elite</p>
+                  <h3>Maximum variety &amp; priority service</h3>
+                  <div class="plan-price">From <span>&#8377;12,000</span> <s class="plan-was">&#8377;15,000</s></div>
+                  <ul class="plan-benefits">
+                     <li>Premium + Power selections</li>
+                     <li>Maximum variety</li>
+                     <li>Priority &amp; premium service</li>
+                     <li>Best-value family package</li>
+                     <li>
+                        <span class="plan-incl-badge plan-incl-badge--green">Includes</span>
+                        Power Breakfast range
+                     </li>
+                     <li>
+                        <span class="plan-incl-badge plan-incl-badge--red">Includes</span>
+                        Meat &amp; protein selections
+                     </li>
+                  </ul>
+                  <a
+                     class="btn btn-outline"
+                     href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20the%20Elite%20plan."
+                     target="_blank"
+                     rel="noopener"
+                     >Get Elite</a
+                  >
+               </article>
+            </div>
+
+            <!-- Product categories strip -->
+            <div class="plan-categories" data-reveal>
+               <p class="plan-cat-label mono">Product Categories</p>
+               <ul class="plan-cat-list">
+                  <li>Starter</li>
+                  <li>Power</li>
+                  <li>Premium Cuts</li>
+                  <li>Power+</li>
+                  <li>Elite</li>
+               </ul>
+            </div>
+
+         </section>
+
+         <!-- ═══════════ REVIEWS ═══════════ -->
+         <!-- <section class="reviews" id="reviews">
+            <div class="section-head">
+               <p class="section-tag mono">Reviews</p>
+               <h2>What people say once the chopping stops.</h2>
+            </div>
+
+            <div class="review-grid" id="reviewGrid"></div>
+         </section> -->
+
+
+         <!-- ═══════════ DISTRIBUTOR ═══════════ -->
+         <!-- <section class="dist" id="distributors">
+            <div class="section-head">
+               <p class="section-tag mono">Distributors</p>
+               <h2>Carry Prep D in your territory.</h2>
+            </div>
+
+            <div class="dist-grid">
+               <div class="dist-benefits" id="distBenefits"></div>
+
+               <aside class="dist-req" data-reveal>
+                  <h3>What we look for</h3>
+                  <ul class="req-list" id="distRequirements"></ul>
+
+                  <form class="dist-form" id="distForm" novalidate>
+                     <p class="form-note mono">
+                        Sends as a pre-written WhatsApp message. Nothing is stored on this site.
+                     </p>
+
+                     <div class="field">
+                        <label for="distName">Your name</label>
+                        <input type="text" id="distName" name="name" required autocomplete="name" />
+                     </div>
+
+                     <div class="field">
+                        <label for="distFirm">Firm or trade name</label>
+                        <input type="text" id="distFirm" name="firm" required autocomplete="organization" />
+                     </div>
+
+                     <div class="field-row">
+                        <div class="field">
+                           <label for="distPhone">Phone</label>
+                           <input type="tel" id="distPhone" name="phone" required autocomplete="tel" />
+                        </div>
+                        <div class="field">
+                           <label for="distTerritory">Territory</label>
+                           <input type="text" id="distTerritory" name="territory" placeholder="e.g. Tirur" required />
+                        </div>
+                     </div>
+
+                     <div class="field">
+                        <label for="distStorage">Cold storage you have</label>
+                        <select id="distStorage" name="storage">
+                           <option>Chiller only (0&ndash;4&deg;C)</option>
+                           <option>Chiller and deep freezer (-18&deg;C)</option>
+                           <option>Planning to set it up</option>
+                           <option>None yet</option>
+                        </select>
+                     </div>
+
+                     <button class="btn btn-solid" type="submit">Send enquiry on WhatsApp</button>
+                  </form>
+               </aside>
+            </div>
+         </section> -->
+
+         <!-- ═══════════ CAREERS ═══════════ -->
+         <!-- <section class="careers" id="careers">
+            <div class="section-head">
+               <p class="section-tag mono">Careers</p>
+               <h2>Open roles at the prep facility.</h2>
+               <p class="section-sub">Applications go straight to our WhatsApp line. Attach your CV in the chat.</p>
+            </div>
+
+            <div class="job-list" id="jobList"></div>
+         </section> -->
+
+         <!-- ═══════════ JOURNAL ═══════════ -->
+         <!-- <section class="journal" id="journal">
+            <div class="section-head">
+               <p class="section-tag mono">Journal</p>
+               <h2>Food, nutrition and what we are building.</h2>
+            </div>
+
+            <div class="post-grid" id="postGrid"></div>
+         </section> -->
+
+         <!-- ═══════════ FAQ ═══════════ -->
+         <section class="faq" id="faq">
+            <div class="faq-head">
+               <p class="section-tag mono">FAQ</p>
+               <h2>Frequently Asked Questions</h2>
+               <p class="faq-subtitle">Everything you need to know about PREP'D hygiene standards, doorstep cold dispatch, and shelf life.</p>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="faq-filters" role="tablist" aria-label="Question categories">
+               <button class="faq-tab is-active" role="tab" data-faq-cat="all">All</button>
+               <button class="faq-tab" role="tab" data-faq-cat="shipping">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  Shipping &amp; Delivery
+               </button>
+               <button class="faq-tab" role="tab" data-faq-cat="storage">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                  Storage &amp; Cold Chain
+               </button>
+               <button class="faq-tab" role="tab" data-faq-cat="shelf">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Shelf Life &amp; Expiry
+               </button>
+               <button class="faq-tab" role="tab" data-faq-cat="returns">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg>
+                  Returns &amp; Guarantee
+               </button>
+            </div>
+
+            <!-- FAQ accordion list -->
+            <div class="faq-list" id="faqList">
+
+               <!-- Shipping & Delivery -->
+               <details class="faq-item" data-faq-cat="shipping" open>
+                  <summary class="faq-q">
+                     Where does PREP'D deliver, and what are the delivery timings?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>We currently deliver across all major localities in <strong>Malappuram district</strong> (Manjeri, Malappuram Town, Perinthalmanna, Tirur, Kottakkal) and <strong>Kozhikode</strong> (Calicut City, Chevayur, Palayam, Mavoor Road, Feroke). We offer two daily slots: <strong>Morning (6:30 AM – 8:30 AM)</strong> and <strong>Evening (4:30 PM – 7:00 PM)</strong>.</p>
+                  </div>
+               </details>
+
+               <details class="faq-item" data-faq-cat="shipping">
+                  <summary class="faq-q">
+                     How are vegetables kept fresh during transit?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>All our packs are sealed in vacuum or modified-atmosphere packaging and dispatched from a temperature-controlled facility. Insulated delivery bags maintain the cold chain from our facility all the way to your door.</p>
+                  </div>
+               </details>
+
+               <!-- Storage & Cold Chain -->
+               <details class="faq-item" data-faq-cat="storage">
+                  <summary class="faq-q">
+                     How should I store PREP'D packs when they arrive?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>Place packs in the refrigerator (2 °C – 6 °C) immediately on arrival. Keep them sealed until use. Do not store near raw meat or strong-smelling foods. Once opened, use within 24 hours.</p>
+                  </div>
+               </details>
+
+               <!-- Shelf Life & Expiry -->
+               <details class="faq-item" data-faq-cat="shelf">
+                  <summary class="faq-q">
+                     What is the shelf life of PREP'D products?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>Fresh-cut vegetable packs stay fresh for <strong>2–3 days</strong> when refrigerated. Vacuum-sealed and modified-atmosphere packs last <strong>up to 5 days</strong>. Power Breakfast mixes have a shelf life of <strong>3–4 days</strong>. Always check the best-before date printed on each pack.</p>
+                  </div>
+               </details>
+
+               <!-- Returns & Guarantee -->
+               <details class="faq-item" data-faq-cat="returns">
+                  <summary class="faq-q">
+                     What is your freshness guarantee and return policy?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>Every pack leaves our facility fresh-inspected. If your order arrives damaged, spoiled, or incorrect, <strong>WhatsApp us within 2 hours of delivery</strong> with a photo and we will arrange a replacement or full refund — no questions asked.</p>
+                  </div>
+               </details>
+
+               <details class="faq-item" data-faq-cat="returns">
+                  <summary class="faq-q">
+                     Do I need to wash the vegetables again before putting them in my pan?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p>PREP'D vegetables are triple-washed and hygienically cut at our facility before packing. You can cook them straight from the pack. A quick rinse is optional but not required.</p>
+                  </div>
+               </details>
+
+               <details class="faq-item" data-faq-cat="returns">
+                  <summary class="faq-q">
+                     Are any preservatives, chemicals, or artificial colorings added?
+                     <span class="faq-chevron" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                     </span>
+                  </summary>
+                  <div class="faq-a">
+                     <p><strong>Absolutely not.</strong> PREP'D products contain only the vegetable or ingredient listed — nothing else. Freshness is maintained purely through cold-chain management and hygienic processing, not chemicals.</p>
+                  </div>
+               </details>
+
+            </div>
+
+            <!-- Contact card -->
+            <div class="faq-contact" data-reveal>
+               <p class="faq-contact-title">Have a question that's not answered here?</p>
+               <p class="faq-contact-sub">Our food quality team is available 7 days a week on WhatsApp hotline.</p>
+               <a
+                  class="btn btn-solid faq-wa-btn"
+                  href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%20have%20a%20question."
+                  target="_blank"
+                  rel="noopener"
+               >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+                  Chat on WhatsApp (+91 88910 04474)
+               </a>
+            </div>
+
+         </section>
+
+         <!-- ═══════════ COMING SOON ═══════════ -->
+         <section class="soon" id="soon">
+            <div class="soon-inner">
+               <div class="soon-head">
+                  <p class="section-tag mono light">Coming Soon</p>
+                  <h2>Prep D is expanding into a complete healthy food ecosystem.</h2>
+               </div>
+               <!-- No data-reveal here: these are revealed by the gsap.from stagger
+                    in script.js. Carrying both made GSAP read the CSS-hidden opacity
+                    as its end value, so the items animated 0 -> 0 and never appeared. -->
+               <ul class="soon-list">
+                  <li><span class="mono">01</span> Fresh meat packs</li>
+                  <li><span class="mono">02</span> Fresh juices</li>
+                  <li><span class="mono">03</span> Premium salad kits</li>
+                  <li><span class="mono">04</span> Healthy ready meals</li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- ═══════════ CTA ═══════════ -->
+         <!-- ═══════════ CONTACT DETAIL ═══════════ -->
+         <section class="contact" id="reach">
+            <div class="section-head">
+               <p class="section-tag mono">Contact</p>
+               <h2>Where we are, and when we pick up.</h2>
+            </div>
+
+            <div class="contact-grid">
+               <div class="contact-card" data-reveal>
+                  <h3 class="mono">Talk to us</h3>
+                  <a class="contact-line" href="tel:+918891004474">+91 88910 04474</a>
+                  <a class="contact-line" href="mailto:official.prepd@gmail.com">official.prepd@gmail.com</a>
+                  <p class="contact-meta">Monday to Sunday, 6:00 AM &ndash; 9:00 PM IST</p>
+               </div>
+
+               <div class="contact-card" data-reveal>
+                  <h3 class="mono">Central processing hub</h3>
+                  <p class="contact-meta">
+                     Industrial Development Area,<br />
+                     Manjeri, Malappuram,<br />
+                     Kerala 676121
+                  </p>
+               </div>
+
+               <div class="contact-card" data-reveal>
+                  <h3 class="mono">Cold logistics hub</h3>
+                  <p class="contact-meta">
+                     Arayidathupalam,<br />
+                     Kozhikode,<br />
+                     Kerala 673004
+                  </p>
+               </div>
+
+               <div class="contact-card contact-check" data-reveal>
+                  <h3 class="mono">Do we reach you?</h3>
+                  <form class="check-form" id="areaForm" novalidate>
+                     <label class="sr-only" for="areaInput">Your locality</label>
+                     <input type="text" id="areaInput" placeholder="Type your locality" autocomplete="off" />
+                     <button class="btn btn-solid" type="submit">Check</button>
+                  </form>
+                  <p class="check-result" id="areaResult" role="status"></p>
+               </div>
+            </div>
+
+            <h3 class="hubs-head">Pickup and dispatch points</h3>
+            <div class="hub-grid" id="hubGrid"></div>
+         </section>
+
+         <section class="cta" id="contact">
+            <h2 class="cta-title">Stop prepping.<br /><em>Start eating well.</em></h2>
+            <p class="cta-lead">Reach out and get fresh, ready-to-cook packs delivered to your door.</p>
+
+            <div class="cta-actions">
+               <a
+                  class="btn btn-solid btn-lg"
+                  href="https://wa.me/918891004474?text=Hi%20Prep%20D!%20I%27d%20like%20to%20order."
+                  target="_blank"
+                  rel="noopener"
+               >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                     <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                     />
+                  </svg>
+                  +91 88910 04474
+               </a>
+               <a class="btn btn-ghost btn-lg" href="mailto:official.prepd@gmail.com">official.prepd@gmail.com</a>
+            </div>
+         </section>
+      </main>
+
+      <!-- ═══════════ FOOTER ═══════════ -->
+      <footer class="footer">
+         <div class="footer-top">
             <div class="footer-brand">
-                <a href="#" class="logo">prepd<span>.</span></a>
-                <p>Fresh vegetables, zero hassle.<br>Making home cooking effortless.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                        </svg>
-                    </a>
-                </div>
+               <a href="#" class="logo footer-logo">
+                  <span class="logo-mark" aria-hidden="true"></span>
+                  prep<em>d</em>
+               </a>
+               <p class="footer-tagline">Fresh. Cut. Delivered.</p>
             </div>
-            <div class="footer-nav">
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="#kits">Our Kits</a>
-                    <a href="#process">Our Process</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <a href="tel:+919876543210">+91 98765 43210</a>
-                    <a href="mailto:hello@prepd.co.in">hello@prepd.co.in</a>
-                    <span>Kochi, Kerala</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Prepd. All rights reserved.</p>
-            <p>FSSAI: 12345678901234</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
+            <nav class="footer-col" aria-label="Sections">
+               <h4 class="mono">Explore</h4>
+               <a href="#about">About</a>
+               <a href="#process">Process</a>
+               <a href="#packs">Packs</a>
+               <a href="#nutrition">Nutrition</a>
+               <a href="#plans">Plans</a>
+               <a href="#faq">FAQ</a>
+               <a href="#reach">Contact</a>
+            </nav>
+
+            <nav class="footer-col" aria-label="Business">
+               <h4 class="mono">Business</h4>
+               <a href="#business">Bulk orders</a>
+               <a href="#distributors">Distributors</a>
+               <a href="#careers">Careers</a>
+               <a href="#faq">FAQ</a>
+               <button type="button" class="linklike" data-open-catalogue>Product catalogue</button>
+            </nav>
+
+            <address class="footer-col">
+               <h4 class="mono">Contact</h4>
+               <a href="tel:+918891004474">+91 88910 04474</a>
+               <a href="mailto:official.prepd@gmail.com">official.prepd@gmail.com</a>
+               <span>Malappuram &middot; Kozhikode</span>
+               <span>6:00 AM &ndash; 9:00 PM, daily</span>
+            </address>
+         </div>
+
+         <p class="footer-wordmark" aria-hidden="true">Healthy food made easy</p>
+
+         <div class="footer-bottom">
+            <p class="footer-fssai mono">
+               <svg class="fssai-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+               FSSAI License #11322807080452
+               <span aria-hidden="true">&bull;</span>
+               Made with fresh care in Kerala, India
+            </p>
+
+            <p class="footer-legal">
+               <button type="button" class="linklike" data-open-legal="privacy">Privacy policy</button>
+               <span aria-hidden="true">&middot;</span>
+               <button type="button" class="linklike" data-open-legal="terms">Terms</button>
+               <span aria-hidden="true">&middot;</span>
+               <span>&copy; 2026 PREP'D Foods Pvt Ltd. All rights reserved.</span>
+            </p>
+         </div>
+      </footer>
+
+      <!-- floating Need Help button -->
+      <button
+         class="wa-float"
+         id="waHelpBtn"
+         aria-label="Open WhatsApp chat"
+         aria-haspopup="dialog"
+         aria-expanded="false"
+         aria-controls="waHelpPopup"
+         type="button"
+      >
+         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+         <span>Need Help?</span>
+      </button>
+
+      <!-- Need Help popup -->
+      <div class="wa-popup" id="waHelpPopup" role="dialog" aria-modal="true" aria-label="Chat with PREP'D" hidden>
+         <div class="wa-popup-head">
+            <div class="wa-popup-avatar" aria-hidden="true">
+               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+            </div>
+            <div class="wa-popup-info">
+               <p class="wa-popup-name">PREP'D Kitchen Desk</p>
+               <p class="wa-popup-status">
+                  <span class="wa-online-dot" aria-hidden="true"></span>
+                  Online &bull; Avg reply &lt; 2 mins
+               </p>
+            </div>
+            <button class="wa-popup-close" id="waHelpClose" type="button" aria-label="Close chat">&times;</button>
+         </div>
+
+         <div class="wa-popup-body">
+            <div class="wa-bubble">
+               👋 Hello! How can we help your kitchen today? Ask for today's morning harvest, sadya meal kits, or custom bulk orders.
+            </div>
+         </div>
+
+         <div class="wa-popup-foot">
+            <input
+               class="wa-popup-input"
+               id="waHelpInput"
+               type="text"
+               placeholder="Type your question..."
+               aria-label="Type your question"
+            />
+            <a
+               class="wa-popup-send"
+               id="waHelpSend"
+               href="https://wa.me/918891004474"
+               target="_blank"
+               rel="noopener"
+            >
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+               Connect on WhatsApp
+            </a>
+         </div>
+      </div>
+
+      <!-- ═══════════ OVERLAYS ═══════════
+           One scrim serves every panel; only one can be open at a time. -->
+      <div class="scrim" id="scrim" hidden></div>
+
+      <!-- basket -->
+      <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+         <header class="drawer-head">
+            <h2 id="cartTitle">Your basket</h2>
+            <button class="icon-btn" type="button" data-close aria-label="Close basket">&times;</button>
+         </header>
+
+         <div class="drawer-body" id="cartBody"></div>
+
+         <footer class="drawer-foot" id="cartFoot" hidden>
+            <dl class="cart-totals">
+               <div><dt>Subtotal</dt><dd class="mono" id="cartSubtotal">&#8377;0</dd></div>
+               <div><dt>Delivery</dt><dd class="mono" id="cartDelivery">&#8377;0</dd></div>
+               <div class="cart-grand"><dt>Total</dt><dd class="mono" id="cartTotal">&#8377;0</dd></div>
+            </dl>
+            <p class="cart-hint mono" id="cartHint"></p>
+            <button class="btn btn-solid btn-lg" type="button" id="checkoutBtn">Continue to order</button>
+         </footer>
+      </aside>
+
+      <!-- product detail -->
+      <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productTitle" hidden>
+         <div class="modal-card modal-wide">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+            <div class="modal-body" id="productBody"></div>
+         </div>
+      </div>
+
+      <!-- recipe -->
+      <div class="modal" id="recipeModal" role="dialog" aria-modal="true" aria-labelledby="recipeTitle" hidden>
+         <div class="modal-card modal-wide">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+            <div class="modal-body" id="recipeBody"></div>
+         </div>
+      </div>
+
+      <!-- journal post -->
+      <div class="modal" id="postModal" role="dialog" aria-modal="true" aria-labelledby="postTitle" hidden>
+         <div class="modal-card modal-wide">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+            <div class="modal-body" id="postBody"></div>
+         </div>
+      </div>
+
+      <!-- checkout -->
+      <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle" hidden>
+         <div class="modal-card">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+
+            <div class="modal-body">
+               <p class="section-tag mono">Checkout on WhatsApp</p>
+               <h2 id="orderTitle">Confirm your order</h2>
+               <p class="modal-lead">
+                  This writes your order into a WhatsApp message and opens the chat. Nothing is stored on this site, and
+                  nothing is charged here &mdash; you pay on delivery.
+               </p>
+
+               <div class="order-summary" id="orderSummary"></div>
+
+               <form class="order-form" id="orderForm" novalidate>
+                  <div class="field-row">
+                     <div class="field">
+                        <label for="ordName">Your name</label>
+                        <input type="text" id="ordName" required autocomplete="name" />
+                     </div>
+                     <div class="field">
+                        <label for="ordPhone">Phone</label>
+                        <input type="tel" id="ordPhone" required autocomplete="tel" />
+                     </div>
+                  </div>
+
+                  <div class="field">
+                     <label for="ordAddress">Delivery address</label>
+                     <input
+                        type="text"
+                        id="ordAddress"
+                        required
+                        autocomplete="street-address"
+                        placeholder="Door, building, street"
+                     />
+                  </div>
+
+                  <div class="field-row">
+                     <div class="field">
+                        <label for="ordCity">Locality</label>
+                        <select id="ordCity"></select>
+                     </div>
+                     <div class="field">
+                        <label for="ordSlot">Delivery slot</label>
+                        <select id="ordSlot"></select>
+                     </div>
+                  </div>
+
+                  <div class="field">
+                     <label for="ordNotes">Anything else? <span class="opt mono">optional</span></label>
+                     <input type="text" id="ordNotes" placeholder="e.g. leave with security, extra gel block" />
+                  </div>
+
+                  <button class="btn btn-solid btn-lg btn-wa" type="submit">
+                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                           d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                        />
+                     </svg>
+                     Send order on WhatsApp
+                  </button>
+
+                  <p class="form-note mono">Pay on delivery by UPI or cash.</p>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!-- catalogue request -->
+      <div class="modal" id="catalogueModal" role="dialog" aria-modal="true" aria-labelledby="catTitle" hidden>
+         <div class="modal-card">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+
+            <div class="modal-body">
+               <p class="section-tag mono">Trade &amp; bulk</p>
+               <h2 id="catTitle">Request the product catalogue</h2>
+               <p class="modal-lead">
+                  Tell us who you are and we will send the current rate card and pack list on WhatsApp.
+               </p>
+
+               <form class="order-form" id="catForm" novalidate>
+                  <div class="field-row">
+                     <div class="field">
+                        <label for="catName">Your name</label>
+                        <input type="text" id="catName" required autocomplete="name" />
+                     </div>
+                     <div class="field">
+                        <label for="catPhone">Phone</label>
+                        <input type="tel" id="catPhone" required autocomplete="tel" />
+                     </div>
+                  </div>
+
+                  <div class="field">
+                     <label for="catOrg">Business name</label>
+                     <input type="text" id="catOrg" autocomplete="organization" />
+                  </div>
+
+                  <div class="field">
+                     <label for="catType">What are you?</label>
+                     <select id="catType">
+                        <option>Hotel or resort</option>
+                        <option>Restaurant or cafe</option>
+                        <option>Caterer or event planner</option>
+                        <option>Supermarket or retail</option>
+                        <option>Corporate or tech park</option>
+                        <option>Prospective distributor</option>
+                        <option>Something else</option>
+                     </select>
+                  </div>
+
+                  <button class="btn btn-solid btn-lg" type="submit">Request on WhatsApp</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!-- privacy / terms -->
+      <div class="modal" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalTitle" hidden>
+         <div class="modal-card">
+            <button class="icon-btn modal-x" type="button" data-close aria-label="Close">&times;</button>
+            <div class="modal-body" id="legalBody"></div>
+         </div>
+      </div>
+
+      <!-- a line of feedback after an action, for people not watching the cart icon -->
+      <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+      <script src="data.js"></script>
+      <script src="script.js"></script>
+      <script src="shop.js"></script>
+   </body>
 </html>
