@@ -3956,3 +3956,62 @@ body.is-locked { overflow: hidden; }
 
     .footer-bottom { gap: .5rem; }
 }
+
+/* ═══════════ MOBILE HARDENING ═══════════
+   Nothing may push the page wider than the phone screen. */
+html, body { overflow-x: clip; max-width: 100%; }
+img, video, svg, iframe { max-width: 100%; }
+
+/* inputs carry an intrinsic ~20ch width that props flex rows open */
+.check-form input { min-width: 0; flex: 1 1 auto; }
+
+/* process steps: stack in one grid cell so the card grows to the
+   tallest step instead of letting chips spill over the prev/next row */
+.steps { display: grid; }
+.step { position: relative; inset: auto; grid-area: 1 / 1; }
+
+@media (max-width: 720px) {
+    /* grid tracks default to min-content minimums — let them shrink */
+    .contact-grid,
+    .pillar-grid,
+    .standards-grid,
+    .pack-grid,
+    .plans-grid,
+    .soon-inner,
+    .footer-top { grid-template-columns: minmax(0, 1fr); }
+    .contact-card, .soon-list li { min-width: 0; }
+    .contact-line, .contact-card p, .footer-col a, .footer-col span { overflow-wrap: anywhere; }
+
+    /* FAQ filter pills scroll sideways on one line, never wrap inside */
+    .faq-tab { white-space: nowrap; flex-shrink: 0; }
+    .faq-wa-btn {
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        white-space: normal;
+        line-height: 1.3;
+        padding: .75rem 1.2rem;
+    }
+    .faq-wa-btn svg { flex-shrink: 0; }
+    .step-tracker { white-space: nowrap; }
+
+    .step-head-row { flex-wrap: wrap; gap: .4rem .8rem; }
+    .process-actions { gap: .6rem; }
+
+    /* decorative wordmark: let it wrap rather than bleed off-screen */
+    .footer-wordmark {
+        white-space: normal;
+        font-size: clamp(2rem, 13vw, 3.5rem);
+        overflow-wrap: anywhere;
+    }
+    .footer-legal { flex-wrap: wrap; row-gap: .25rem; }
+    .footer-legal .linklike { white-space: nowrap; }
+
+    .hub-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+@media (max-width: 400px) {
+    .hub-grid { grid-template-columns: minmax(0, 1fr); }
+    .check-form { flex-wrap: wrap; }
+    .check-form .btn { flex: 1 1 100%; }
+}
